@@ -164,3 +164,17 @@ body {
 .social-icon:hover {
   opacity: 0.5;
 }
+
+@media only screen and (max-width: 320px) {
+  .tea-pic {
+    display: none;
+  }
+  .main-card {
+    width: 90vw;
+    font-size: 0.8em;
+  }
+  .main-description {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
