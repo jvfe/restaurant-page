@@ -190,6 +190,29 @@ body {
   font-size: 0.6em;
 }
 
+.contact-display {
+  grid-template-rows: auto auto 1fr;
+  gap: 1em 0;
+  color: var(--lavender-blue);
+  margin: 0;
+  padding: 0;
+}
+
+.contact-card {
+  height: 30em;
+  width: 30em;
+}
+
+.contact-info {
+  font-size: 1.2em;
+}
+
+.map-frame {
+  height: 20em;
+  width: 25em;
+  max-width: 100%;
+}
+
 .foot {
   color: var(--dark-sea-green);
   border-top: 1px solid var(--tea-green);
