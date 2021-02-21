@@ -1,4 +1,5 @@
-import { setAttributes } from "./utils.js";
+import { setAttributes, renderInOrder } from "./utils.js";
+import { createMain } from "./commonModules";
 
 function createTitleSection() {
   const titleSection = document.createElement("div");
@@ -64,4 +65,11 @@ function createHomeContent() {
   return subMain;
 }
 
-export { createHomeContent };
+function createHome(contentDiv) {
+  contentDiv.textContent = "";
+  const mainSection = createMain();
+  mainSection.appendChild(createHomeContent());
+  renderInOrder(contentDiv, mainSection);
+}
+
+export { createHome };

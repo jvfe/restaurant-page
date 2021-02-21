@@ -10,7 +10,7 @@ function createHeader() {
 
   tabs.forEach((tab) => {
     const li = document.createElement("li");
-    li.classList.add(...["tab", "margin-around"]);
+    li.classList.add(...[`${tab.toLowerCase()}`, "tab", "margin-around"]);
     li.textContent = tab;
     ul.appendChild(li);
   });

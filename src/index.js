@@ -1,15 +1,7 @@
-import {
-  createHeader,
-  createMain,
-  createFooter,
-} from "./modules/commonModules";
-import { createHomeContent } from "./modules/home";
+import { createHome } from "./modules/home";
 
 const content = document.querySelector("#content");
-console.log("I'm working!");
-content.appendChild(createHeader());
+createHome(content);
 
-const mainSection = createMain();
-mainSection.appendChild(createHomeContent());
-content.appendChild(mainSection);
-content.appendChild(createFooter());
+const homeButton = document.querySelector(".home");
+homeButton.addEventListener("click", () => createHome(content));
