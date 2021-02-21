@@ -12,8 +12,8 @@
 
 :root {
   --old-mauve: rgb(81, 45, 56);
-  --old-mauve-semi: rgba(81, 45, 56, 0.5);
-  --old-mauve-darker: rgba(81, 45, 56, 0.8);
+  --old-mauve-semi: rgba(81, 45, 56, 0.75);
+  --old-mauve-darker: rgba(81, 45, 56, 0.9);
   --dark-sea-green: rgb(120, 192, 145);
   --darker-sea-green: rgb(94, 150, 113);
   --lavender-blue: rgb(228, 217, 255);
