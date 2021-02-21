@@ -1,5 +1,6 @@
 import { createHome } from "./modules/home";
 import { createMenu } from "./modules/menu";
+import { createContact } from "./modules/contact";
 
 const content = document.querySelector("#content");
 createHome(content);
@@ -19,8 +20,16 @@ function addListeners() {
   });
 
   const ourMenu = document.querySelector(".menu-btn");
-  ourMenu.addEventListener("click", () => {
-    createMenu(content);
+  if (ourMenu !== null) {
+    ourMenu.addEventListener("click", () => {
+      createMenu(content);
+      addListeners();
+    });
+  }
+
+  const contactButton = document.querySelector(".contact");
+  contactButton.addEventListener("click", () => {
+    createContact(content);
     addListeners();
   });
 }
