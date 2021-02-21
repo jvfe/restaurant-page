@@ -152,6 +152,44 @@ body {
   background: var(--darker-sea-green);
 }
 
+.menu-display {
+  height: 100%;
+  width: 100%;
+  gap: 0;
+  color: var(--lavender-blue);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.menu-item {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0.2em 0;
+}
+
+.menu-photo {
+  border-radius: 30%;
+  width: 60%;
+}
+
+.item-section {
+  grid-column: 2 / span 3;
+}
+
+.menu-title {
+  font-family: "AbrilFatface", cursive;
+}
+
+.item-description {
+  padding: 0.5em;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.item-price {
+  padding: 0 0.5em;
+  font-size: 0.6em;
+}
+
 .foot {
   color: var(--dark-sea-green);
   border-top: 1px solid var(--tea-green);
@@ -176,5 +214,12 @@ body {
   .main-description {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .menu-display {
+    overflow: scroll;
+  }
+  .menu-photo {
+    width: 100%;
+    border-radius: 0;
   }
 }
