@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "AbrilFatface";
+  src: local("☺"),
+    url("../assets/font/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: local("☺"),
+    url("../assets/font/JosefinSans-Regular.ttf") format("truetype");
+}
+
+:root {
+  --old-mauve: rgb(81, 45, 56);
+  --old-mauve-semi: rgba(81, 45, 56, 0.5);
+  --old-mauve-darker: rgba(81, 45, 56, 0.8);
+  --dark-sea-green: rgb(120, 192, 145);
+  --lavender-blue: rgb(228, 217, 255);
+  --camel: rgb(197, 155, 118);
+  --camel-semi: rgb(197, 155, 118, 0.5);
+  --tea-green: rgb(221, 249, 193);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +33,54 @@ html {
 
 body {
   min-height: 100%;
+  background-image: url("../assets/img/rest-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "JosefinSans-Regular", sans-serif;
+}
+
+#content {
+  display: grid;
+}
+
+.head {
+  padding: 2em 0;
+  color: var(--lavender-blue);
+  background-color: var(--old-mauve-darker);
+  text-align: center;
+  font-family: "AbrilFatface", cursive;
+  font-size: 1.2em;
+  border-bottom: 1px solid var(--tea-green);
+}
+
+.main-area {
+  display: grid;
+  place-items: center;
+}
+
+.main-description {
+  color: var(--lavender-blue);
+  text-align: justify;
+  width: 50em;
+  height: 35em;
+  margin: 5vh 5vw;
+  padding: 0rem 2rem;
+  background-color: var(--old-mauve-semi);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  gap: 0 1em;
+  place-items: center;
+  font-weight: bold;
+  border: 1px solid var(--camel-semi);
+}
+
+.rest-about {
+  font-size: 1.5em;
+}
+
+.tea-pic {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
